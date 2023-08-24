@@ -1,4 +1,4 @@
-const noImage = "./assets/noposter.jpg";
+import noImage from "../assets/noposter.jpg";
 
 const apiKey = "5b3461092f4ccb300dea691302e0fc8d";
 const urlBase = "https://api.themoviedb.org/3/"
