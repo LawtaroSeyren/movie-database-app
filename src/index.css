@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a14;
+  padding: 60px;
+  color: white;
+  
+}
+.app-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  width: 80%;
+  border: 1px solid #ffcc26;
+  transition: all 0.3s;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+
+
+.search-bar-input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+h1{
+  font-size: 3rem;
+  margin: 15px;
+}
+
+
+
+.movie-card-search {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 250px;
+  height: 425px;
+  background-color: #24243c;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  transition: all 0.3s;
+  border: 1px solid #383958
+}
+
+.movie-card-search:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 8px 16px rgb(0, 0, 0);
+  border: 1px solid #ffcc26;
+  background-color: #383958;
+  color: #ffcc26;
+  cursor: pointer;
+}
+
+.movie-card-search h3{
+  text-align: center;
+}
+
+
+.search-results-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.img-search{
+  width: 230px;
+  height: 345px;
+  object-fit: cover;
+}
+
+
+.movie-card-popular {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 450px;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 10px;
+  transition: all 0.3s;
+  border: 1px solid #383958;
+  overflow: hidden;
+}
+
+.movie-card-popular:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 8px 16px rgb(0, 0, 0);
+  border: 1px solid #ffcc26;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  cursor: pointer
+}
+
+
+.movie-card-popular h3 {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  pointer-events: none
+}
+
+.movie-card-popular:hover h3 {
+  opacity: 1; 
+}
+
+
+.popular-movies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.img-popular{
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.img-popular:hover{
+  filter: brightness(0.3)
+}
