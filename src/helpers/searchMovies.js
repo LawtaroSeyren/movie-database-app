@@ -1,4 +1,4 @@
-import noImage from "./assets/noposter.jpg";
+import noImage from "https://lawtaroseyren.github.io/tmdb-app/assets/noposter-f79b7e46.jpg";
 
 const apiKey = "5b3461092f4ccb300dea691302e0fc8d";
 const urlBase = "https://api.themoviedb.org/3/"
