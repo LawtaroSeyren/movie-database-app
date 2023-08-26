@@ -5,10 +5,88 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #0a0a14;
-  padding: 60px;
+  padding: 0;
   color: white;
+  margin: 0;
   
 }
+
+/* Header general  */
+
+.header-container-base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-base {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-base li {
+  margin: 1rem;
+}
+
+.navbar-base li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s;
+}
+
+.navbar-base li a:hover {
+  color: #ffcc26;
+}
+
+.navbar-base li a.active {
+  color: #ffcc26;
+}
+
+.image-logo-base{
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+/* HEADER EN DETALLES DE SERIE O PELÍCULA */
+
+.header-container-details {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: #0a0a14;
+}
+
+.image-logo-details {
+  width: 10rem; 
+  margin-left: 10rem;
+}
+
+.navbar-details {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+.navbar-details li {
+  margin-right: 20px;
+}
+
+.navbar-details a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.navbar-details a:hover {
+  color: #ffcc26;
+}
+
+
 .app-container{
   display: flex;
   flex-direction: column;
@@ -43,7 +121,11 @@ body {
 
 h1{
   font-size: 3rem;
-  margin: 15px;
+  margin: 0;
+}
+
+h2{
+  text-align: center;
 }
 
 
@@ -51,11 +133,12 @@ h1{
 .movie-card-search {
   display: flex;
   flex-direction:column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   width: 250px;
   height: 425px;
   background-color: #24243c;
-  color: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -69,14 +152,18 @@ h1{
   box-shadow: 0px 8px 16px rgb(0, 0, 0);
   border: 1px solid #ffcc26;
   background-color: #383958;
-  color: #ffcc26;
   cursor: pointer;
 }
 
-.movie-card-search h3{
-  text-align: center;
+.movie-card-link{
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
 }
 
+.movie-card-link:hover{
+  color: #ffcc26;
+}
 
 .search-results-container {
   display: flex;
@@ -127,7 +214,8 @@ h1{
   text-align: center;
   margin: 0;
   padding: 0;
-  pointer-events: none
+  pointer-events: none;
+  color: white;
 }
 
 .movie-card-popular:hover h3 {
@@ -151,4 +239,64 @@ h1{
 
 .img-popular:hover{
   filter: brightness(0.3)
+}
+
+
+.movie-page-container {
+  width: 90%;
+  display: flex;
+}
+
+.left-column {
+  margin: 3rem;
+  width: 30%;
+  text-align: center;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-column {
+  width: 70%;
+  margin: 3rem;
+}
+
+.genres{
+  display: flex;
+}
+
+.genre{
+  background-color: #24243c;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border: solid 1px #24243c; 
+  border-radius: 20px;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s;
+}
+
+.genre:hover{
+  cursor: pointer;
+  border: solid 1px #ffcc26;
+  background-color: #383958;
+  color:#ffcc26;
+
+}
+
+.stars p {
+font-size: 0.8rem;
+}
+
+.episodes {
+  color:white;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  border: solid 1px #ffcc26;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+.no-trailer {
+  margin-top: 5rem;
 }

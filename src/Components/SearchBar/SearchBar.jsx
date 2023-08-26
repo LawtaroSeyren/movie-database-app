@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const SearchBar = ( { onSearch } ) => {
+export const SearchBar = ( { onSearch, media } ) => {
 
     const [inputValue, setInputValue] = useState("")
 
@@ -9,7 +9,8 @@ export const SearchBar = ( { onSearch } ) => {
         onSearch(target.value)
     }
 
-
+    let toSearch = ""
+    media === "movie" ? toSearch = "películas" : toSearch = "series"
 
   return (
 
@@ -18,7 +19,7 @@ export const SearchBar = ( { onSearch } ) => {
         className="search-bar-input"
         type="text"
         name="searchbar"
-        placeholder="Ingresa tu búsqueda"
+        placeholder={`Ingresa tu búsqueda de ${toSearch}`}
         onChange = { handleSearchValue }
         value={ inputValue }/>
     </div>
